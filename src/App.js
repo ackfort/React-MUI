@@ -1,11 +1,15 @@
 import { Button } from "@mui/material";
+import { Delete, Send } from "@mui/icons-material";
 
 function App() {
   return (
     <div>
-      <Button variant="text">Text</Button>
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button>
+      <Button variant="outlined" startIcon={<Delete />}>
+        Delete
+      </Button>
+      <Button variant="contained" endIcon={<Send />}>
+        Send
+      </Button>
     </div>
   );
 }
