@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <Button variant="outlined" startIcon={<Delete />}>
+      <Button color="secondary" variant="outlined" startIcon={<Delete />}>
         Delete
       </Button>
       <Button variant="contained" endIcon={<Send />} sx={{
