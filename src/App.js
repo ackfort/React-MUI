@@ -3,8 +3,8 @@ import { Delete, Send } from "@mui/icons-material";
 
 function App() {
 
-  const RedButton = styled(Button)({
-    backgroundColor: "red",
+  const RedButton = styled(Button)(({theme}) => ({
+    backgroundColor: theme.palette.primary.main,
     color: "white",
     margin: 5,
     "&:hover": {
@@ -14,7 +14,7 @@ function App() {
       backgroundColor: "gray",
       color: "white"
     }
-  });
+  }));
 
   return (
     <div>
