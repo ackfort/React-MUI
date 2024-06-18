@@ -1,49 +1,14 @@
-import { Button, Typography, styled } from "@mui/material";
-import { Delete, Send } from "@mui/icons-material";
+import Feed from "./components/Feed";
+import Rightbar from "./components/Rightbar";
+import Sidebar from "./components/Sidebar";
 
 function App() {
 
-  const RedButton = styled(Button)(({theme}) => ({
-    backgroundColor: theme.palette.primary.main,
-    color: "white",
-    margin: 5,
-    "&:hover": {
-      backgroundColor: "orange"
-    },
-    "&:disabled": {
-      backgroundColor: "gray",
-      color: "white"
-    }
-  }));
-
   return (
     <div>
-      <Button color="secondary" variant="outlined" startIcon={<Delete />}>
-        Delete
-      </Button>
-      <Button variant="contained" endIcon={<Send />} sx={{
-        backgroundColor: "red",
-        color: "white",
-        margin: 5,
-        "&:hover": {
-          backgroundColor: "orange"
-        },
-        "&:disabled": {
-          backgroundColor: "gray",
-          color: "white"
-        }
-      }}>
-        Send
-      </Button>
-      <Typography variant="h1" component="p">
-        h1. Heading p tag
-      </Typography>
-      <h1>
-        hello
-      </h1>
-      <RedButton>
-        new Button
-      </RedButton>
+      <Sidebar/>
+      <Feed/>
+      <Rightbar/>
     </div>
   );
 }
