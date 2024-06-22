@@ -1,0 +1,37 @@
+- Box vs Container = Box จะไม่มีขอบ
+
+- Stack
+    spacing เว้นระยะระหว่าง obj แต่ละอัน
+    justifyContent: center, space-between, space-evenly
+
+- Box 
+    flex = แบ่งสัดส่วน
+    p = padding
+
+- AppBar
+    position='sticky' การใช้ position เป็นแก้ปัญหาการซ้อนทับของหน้าหลักกับ Navbar ส่วน sticky ใช้ช่วยให้มีการแสดง Navbar ก่อนเพื่อน
+
+- Show and Hide
+    sx={{ display: { xs: "none", sm: "block" } }} 
+        = ถ้าหน้าจอมีขนาดเล็กกว่า 600px ให้หายไป( สามารถดูข้อมูลเพิ่มเติมได้ที่ BreakPoint MUI )
+    sx={{ display: { xs: "block", lg: "none" } }}
+        = ถ้าหน้าจอมีขนาดเล็กกว่า 600px ให้แสดง
+        xs, extra-small: 0px
+        sm, small: 600px
+        md, medium: 900px
+        lg, large: 1200px
+        xl, extra-large: 1536px
+
+- InputBase placeholder='search...' สามารถตั้งเป็นค่าเริ่มต้นสำหรับรับข้อมูลได้
+
+- Badge ประมาณว่าจำนวนเมลที่ยังไม่อ่าน
+    <Badge badgeContent={4} color="error">
+       <MailIcon/>
+    </Badge>
+
+- about Icon Mail and Avatar
+    alignItems:"center" ทำให้แนวตั้งอยู่ตรงกลางใช้สำหรับแถบเนปด้านขวา
+    gap ระยะห่างของ obj แต่ละอัน
+
+    display:"none" 
+    [theme.breakpoints.up("sm")]:{display:"flex"} ถ้าขนาดใหญ่ให้แสดง ถ้าเล็กให้ซ่อน
